@@ -1,0 +1,66 @@
+.sidebar-filter {
+    color: #ffffff;
+    padding: 15px 30px 30px;
+
+
+
+    @media (min-width: 992px) {
+        border-right: 1px solid #ffffff;
+        background-color: rgba(#ffffff, 0.25);
+    }
+
+    @media (max-width: 991px) {
+        border-top: 1px solid #ffffff;
+    }
+
+
+    legend {
+        font-weight: bold;
+    }
+
+    .form-check {
+        margin: 10px 0;
+
+        &-label {
+            font-size: 1.25rem;
+            margin-left: 0.5rem;
+        }
+
+        &-input {
+            width: 0;
+            height: 0;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:checked {
+                &::before {
+                    background-color: #ffffff;
+                }
+            }
+
+            &::before {
+                width: 0.8rem;
+                height: 0.8rem;
+                margin-top: 0.35rem;
+                display: block;
+                border: 1px solid #ffffff;
+                content: "";
+            }
+        }
+    }
+
+    &__more {
+        display: block;
+        color: #ffffff;
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+    }
+
+    &__submit {
+        border-radius: 0;
+        background-color: #2c71b6;
+        border: 1px solid #ffffff;
+    }
+}
